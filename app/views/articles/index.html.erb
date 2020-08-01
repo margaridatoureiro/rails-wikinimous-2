@@ -1,0 +1,8 @@
+<div class="container" style="width: 1000px; margin:20px auto; text-align: center">
+  <h1 style="margin: 20px">All the articles you can read, ya filthy animal</h1>
+  <% @articles.each do |article| %>
+  <h2><%= link_to article.title, article_path(article) %></h2>
+  <h5 style="text-align: left"><%= article.content %></h5>
+  <% end %>
+</div>
+
